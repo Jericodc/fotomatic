@@ -1,0 +1,55 @@
+/* Normalizers */
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #4a4a4a;
+}
+
+a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.logo {
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li:not(:last-child) {
+    margin-right: 2rem;
+}
+
+
+
+nav img {
+    width: 1rem;
+}
+
+
+.mobile,
+.join {
+    display: none;
+}
