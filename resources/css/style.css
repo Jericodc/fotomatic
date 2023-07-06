@@ -24,14 +24,16 @@ a {
 
 /* --------- Header --------- */
 header {
+    padding: 1.875rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
 }
 
+/* Desktop Nav */
 .logo {
     font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
 }
 
 nav li {
@@ -39,15 +41,15 @@ nav li {
 }
 
 nav li:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 3.5rem;
 }
 
-
-
-nav img {
-    width: 1rem;
+.instagram-logo {
+    width: 1.3rem;
+    vertical-align: middle;
+    padding-bottom: .175rem;
+    margin-left: .3rem;
 }
-
 
 .mobile,
 .join {
