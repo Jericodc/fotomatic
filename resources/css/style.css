@@ -17,6 +17,14 @@ body {
     color: #4a4a4a;
 }
 
+h1, h2, h3 {
+    text-wrap: balance;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
 a {
     text-decoration: none;
     color: #4a4a4a;
@@ -68,8 +76,37 @@ main {
     top: 5.75rem;
 }
 
+:is(.featured-section, .filters-section) p {
+    font-weight: lighter;
+}
+
 /* Banner Section */
 .banner-section {
-    height: 500px;
+    min-height: 43.75rem;
     background: url('../img/banner-landingpage.jpg') center/cover no-repeat;
+}
+
+/* Featured Section */
+.featured-section {
+    background-color: #f3f3f3;
+    padding: 4rem 8%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.25rem;
+}
+
+.featured-container {
+    background-color: white;
+    padding: 2rem 3.5rem;
+    flex: 1;
+}
+
+.featured-container img {
+    max-width: 100%;
+}
+
+.featured-text {
+    padding: 2.5rem;
 }
