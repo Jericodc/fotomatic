@@ -47,6 +47,7 @@ h2 {
 
 p {
     font-size: var(--fs-p);
+    line-height: 1.35rem;
 }
 
 a {
