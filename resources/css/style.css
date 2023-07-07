@@ -47,6 +47,11 @@ a {
     color: var(--clr-primary);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 /* --------- Header --------- */
 header {
     width: 100%;
@@ -77,6 +82,7 @@ nav li:not(:last-child) {
 }
 
 .instagram-logo {
+    display: inline;
     width: 1.3rem;
     vertical-align: middle;
     padding-bottom: .175rem;
@@ -126,11 +132,6 @@ nav li:not(:last-child) {
     flex: 1;
 }
 
-.featured-container img {
-    display: block;
-    max-width: 100%;
-}
-
 .featured-text {
     padding: 2.5rem;
 }
@@ -155,11 +156,6 @@ nav li:not(:last-child) {
     grid-auto-flow: column;
 }
 
-.filters-container img {
-    max-width: 100%;
-    display: block;
-} 
-
 
 /* Quote Section */
 .quote-section {
@@ -181,11 +177,6 @@ nav li:not(:last-child) {
     font-size: 1.875rem;
     font-style: italic;
     text-align: center;
-}
-
-.quote-block img {
-    max-width: 100%;
-    display: block;
 }
 
 
