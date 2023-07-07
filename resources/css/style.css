@@ -43,6 +43,7 @@ header {
     z-index: 100;
 }
 
+
 /* Desktop Nav */
 .logo {
     font-family: 'Roboto Mono', monospace;
@@ -70,21 +71,25 @@ nav li:not(:last-child) {
 }
 
 
-/* --------- Main --------- */
-main {
+/* --------- Container --------- */
+.container {
     position: relative;
     top: 5.75rem;
 }
 
+
+/* --------- Main --------- */
 :is(.featured-section, .filters-section) p {
     font-weight: lighter;
 }
+
 
 /* Banner Section */
 .banner-section {
     min-height: 43.75rem;
     background: url('../img/banner-landingpage.jpg') center/cover no-repeat;
 }
+
 
 /* Featured Section */
 .featured-section {
@@ -112,6 +117,7 @@ main {
     padding: 2.5rem;
 }
 
+
 /* Filters Section */
 .filters-section {
     background-color: #4a4a4a;
@@ -135,3 +141,21 @@ main {
     max-width: 100%;
     display: block;
 } 
+
+
+/* Quote Section */
+.quote-section {
+    background-color: #f3f3f3;
+    padding: 5rem 0;
+}
+
+
+/* Footer */
+footer {
+    background-color: #9b9b9b;
+    color: white;
+    font-size: .875rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
