@@ -43,6 +43,7 @@ body {
 h2 {
     font-size: var(--fs-h2);
     text-wrap: balance;
+    margin-bottom: 1rem;
 }
 
 p {
