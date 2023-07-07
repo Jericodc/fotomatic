@@ -5,6 +5,13 @@
     --clr-secondary: #fff;
     --clr-tertiary: #f3f3f3;
     --clr-footer: #9b9b9b;
+
+    /* Fonts */
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-roboto-mono: 'Roboto Mono', monospace;
+    --ff-ibm-plex: 'IBM Plex Serif', serif;
+    --ff-rubik: 'Rubik', sans-serif;
+    --ff-damion: 'Damion', cursive;
 }
 
 
@@ -23,7 +30,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--ff-roboto);
     color: var(--clr-primary);
 }
 
@@ -56,7 +63,7 @@ header {
 
 /* Desktop Nav */
 .logo {
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--ff-roboto-mono);
     font-size: 1.5rem;
     padding-inline-end: 5rem;
 }
@@ -170,7 +177,7 @@ nav li:not(:last-child) {
 }
 
 .quote {
-    font-family: 'IBM Plex Serif', serif;
+    font-family: var(--ff-ibm-plex);
     font-size: 1.875rem;
     font-style: italic;
     text-align: center;
