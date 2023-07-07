@@ -12,6 +12,10 @@
     --ff-ibm-plex: 'IBM Plex Serif', serif;
     --ff-rubik: 'Rubik', sans-serif;
     --ff-damion: 'Damion', cursive;
+
+    --fs-h2: clamp(1.688rem, 2vw + 1rem, 2.25rem);
+    --fs-p: clamp(0.75rem, 2vw + 1rem, 1rem);
+    --fs-quote: clamp(1.406rem, 2vw + 1rem, 1.875rem);
 }
 
 
@@ -29,17 +33,20 @@ html {
     padding: 0;
 }
 
+
+/* Universal Styles */
 body {
     font-family: var(--ff-roboto);
     color: var(--clr-primary);
 }
 
-h1, h2, h3 {
+h2 {
+    font-size: var(--fs-h2);
     text-wrap: balance;
 }
 
-h2 {
-    font-size: 2.25rem;
+p {
+    font-size: var(--fs-p);
 }
 
 a {
@@ -51,6 +58,7 @@ img {
     display: block;
     max-width: 100%;
 }
+
 
 /* --------- Header --------- */
 header {
@@ -142,7 +150,7 @@ nav li:not(:last-child) {
     background-color: var(--clr-primary);
     text-align: center;
     color: var(--clr-secondary);
-    padding: 4rem 0;
+    padding-block: 4rem;
 }
 
 .filters-text {
@@ -164,7 +172,7 @@ nav li:not(:last-child) {
 }
 
 .quote-block {
-    padding: 5rem 0;
+    padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,7 +182,7 @@ nav li:not(:last-child) {
 
 .quote {
     font-family: var(--ff-ibm-plex);
-    font-size: 1.875rem;
+    font-size: var(--fs-quote);
     font-style: italic;
     text-align: center;
 }
