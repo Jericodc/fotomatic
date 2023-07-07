@@ -104,9 +104,34 @@ main {
 }
 
 .featured-container img {
+    display: block;
     max-width: 100%;
 }
 
 .featured-text {
     padding: 2.5rem;
 }
+
+/* Filters Section */
+.filters-section {
+    background-color: #4a4a4a;
+    text-align: center;
+    color: white;
+    padding: 4rem 0;
+}
+
+.filters-text {
+    padding-inline: 5rem;
+}
+
+.filters-container {
+    padding-inline: .75rem;
+    margin-top: 3.75rem;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.filters-container img {
+    max-width: 100%;
+    display: block;
+} 
