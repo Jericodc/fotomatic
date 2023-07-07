@@ -1,3 +1,13 @@
+/* Variables */
+:root {
+    /* Colors */
+    --clr-primary: #4a4a4a;
+    --clr-secondary: #fff;
+    --clr-tertiary: #f3f3f3;
+    --clr-footer: #9b9b9b;
+}
+
+
 /* Normalizers */
 html {
     box-sizing: border-box;
@@ -14,7 +24,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #4a4a4a;
+    color: var(--clr-primary);
 }
 
 h1, h2, h3 {
@@ -27,13 +37,13 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #4a4a4a;
+    color: var(--clr-primary);
 }
 
 /* --------- Header --------- */
 header {
     width: 100%;
-    background-color: white;
+    background-color: var(--clr-secondary);
     border-bottom: 1px solid #c6c1c1;
     padding: 1.875rem;
     display: flex;
@@ -94,7 +104,7 @@ nav li:not(:last-child) {
 
 /* Featured Section */
 .featured-section {
-    background-color: #f3f3f3;
+    background-color: var(--clr-tertiary);
     padding: 4rem 8%;
     text-align: center;
     display: flex;
@@ -104,7 +114,7 @@ nav li:not(:last-child) {
 }
 
 .featured-container {
-    background-color: white;
+    background-color: var(--clr-secondary);
     padding: 2rem 3.5rem;
     flex: 1;
 }
@@ -121,9 +131,9 @@ nav li:not(:last-child) {
 
 /* Filters Section */
 .filters-section {
-    background-color: #4a4a4a;
+    background-color: var(--clr-primary);
     text-align: center;
-    color: white;
+    color: var(--clr-secondary);
     padding: 4rem 0;
 }
 
@@ -146,8 +156,8 @@ nav li:not(:last-child) {
 
 /* Quote Section */
 .quote-section {
-    background-color: #f3f3f3;
-    color: #4a4a4a;
+    background-color: var(--clr-tertiary);
+    color: var(--clr-primary);
 }
 
 .quote-block {
@@ -174,8 +184,8 @@ nav li:not(:last-child) {
 
 /* Footer */
 footer {
-    background-color: #9b9b9b;
-    color: white;
+    background-color: var(--clr-footer);
+    color: var(--clr-secondary);
     font-size: .875rem;
     padding: 2rem;
     display: flex;
