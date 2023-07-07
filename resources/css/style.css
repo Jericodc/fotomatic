@@ -177,11 +177,10 @@ nav li:not(:last-child) {
 }
 
 .quote-block {
-    padding: 5rem;
+    padding: 5rem 6%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -190,6 +189,10 @@ nav li:not(:last-child) {
     font-size: var(--fs-quote);
     font-style: italic;
     text-align: center;
+}
+
+.quote-block img {
+    min-width: 8rem;
 }
 
 
@@ -201,4 +204,48 @@ footer {
     padding: 2rem;
     display: flex;
     justify-content: space-between;
+}
+
+
+/* Responsive */
+/* Media Tablet (768px) */
+@media only screen and (max-width: 1200px) {
+    /* Header */
+    header {
+        padding-block: 1rem;
+    }
+
+    /* Container */
+    .container {
+        top: 3.95rem;
+    }
+
+    /* Banner Section */
+    .banner-section {
+        min-height: 30rem;
+    }
+
+    /* Featured Section */
+    .featured-section {
+        padding: 2rem 1rem;
+    }
+
+    .featured-container {
+        padding: 1.5rem 2rem;
+    }
+
+    .featured-text {
+        padding: 1.5rem;
+    }
+
+    /* Filters Section */
+    .filters-container {
+        padding-inline: 0;
+    }
+
+    /* Footer */
+    footer {
+        padding-block: 1rem;
+    }
+
 }
