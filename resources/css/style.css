@@ -80,6 +80,7 @@ header,
 
 .cta-container,
 .cta-join-btn,
+.banner-mobile,
 .filters-section,
 footer {
     color: var(--clr-secondary);
@@ -195,6 +196,10 @@ nav li:not(:last-child) {
     padding: 1rem 8rem;
 }
 
+.banner-mobile {
+    display: none;
+}
+
 
 /* Featured Section */
 .featured-section {
@@ -281,6 +286,17 @@ footer p {
     /* Banner Section */
     .banner-section {
         background-position: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-container {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
     }
 
     /* Featured Section */
