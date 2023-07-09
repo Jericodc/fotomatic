@@ -131,7 +131,7 @@ nav li:not(:last-child) {
     border-radius: 4px;
 }
 
-.mobile,
+.mobile-nav,
 .join {
     display: none;
 }
@@ -289,6 +289,11 @@ footer p {
 /* --------- Responsive --------- */
 /* Media Tablet (768px) */
 @media only screen and (max-width: 1200px) {
+    /* Header */
+    .join {
+        display: inline;
+        margin-left: -6rem;
+    }
 
     /* Banner Section */
     .banner-section {
@@ -316,6 +321,33 @@ footer p {
 @media only screen and (max-width: 600px) {
     p {
         line-height: 1.4;
+    }
+
+    /* Header */
+    .logo,
+    .desktop-nav {
+        display: none;
+    }
+
+    header {
+        padding-inline: 1rem;
+        justify-content: space-between;
+    }
+
+    .mobile-nav {
+        width: 60%;
+        display: initial;
+    }
+
+    .mobile-nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* gap: 2rem; */
+    }
+
+    .join {
+        margin-left: 0;
     }
 
     /* Banner Section */
