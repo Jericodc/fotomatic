@@ -36,10 +36,18 @@ html {
 }
 
 
-/* Universal Styles */
+/* Global Styles */
 body {
     font-family: var(--ff-roboto);
+}
+
+body,
+a {
     color: var(--clr-primary);
+}
+
+a {
+    text-decoration: none;
 }
 
 h2 {
@@ -57,14 +65,19 @@ p:not(.quote) {
     line-height: 1.35rem;
 }
 
-a {
-    text-decoration: none;
-    color: var(--clr-primary);
-}
-
 img {
     display: block;
     max-width: 100%;
+}
+
+header,
+.featured-box {
+    background-color: var(--clr-secondary);
+}
+
+.filters-section,
+footer {
+    color: var(--clr-secondary);
 }
 
 
@@ -146,7 +159,6 @@ nav li:not(:last-child) {
 }
 
 .featured-box {
-    background-color: var(--clr-secondary);
     padding-block: clamp(1rem, 1.5vw + 0.75rem, 2rem);
     padding-inline: clamp(2rem, 5vw - 0.4rem, 3.5rem);
     flex: 1;
@@ -160,7 +172,6 @@ nav li:not(:last-child) {
 /* Filters Section */
 .filters-section {
     background-color: var(--clr-primary);
-    color: var(--clr-secondary);
     padding-block: 4rem;
 }
 
@@ -179,7 +190,6 @@ nav li:not(:last-child) {
 /* Quote Section */
 .quote-section {
     background-color: var(--clr-tertiary);
-    color: var(--clr-primary);
 }
 
 .quote-block {
@@ -205,7 +215,6 @@ nav li:not(:last-child) {
 /* --------- Footer --------- */
 footer {
     background-color: var(--clr-footer);
-    color: var(--clr-secondary);
     padding: clamp(0.75rem, 0.409rem + 1.818vw, 2rem);
     display: flex;
     justify-content: space-between;
