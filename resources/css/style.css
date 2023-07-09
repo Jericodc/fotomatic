@@ -124,6 +124,13 @@ nav li:not(:last-child) {
     margin-left: .3rem;
 }
 
+.join {
+    background-color: var(--clr-accent);
+    color: var(--clr-secondary);
+    padding: .4rem .6rem;
+    border-radius: 4px;
+}
+
 .mobile,
 .join {
     display: none;
