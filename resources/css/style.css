@@ -16,6 +16,8 @@
 
     --fs-logo-h1: clamp(1.125rem, 2vw + 1rem, 1.5rem);
     --fs-h2: clamp(1.125rem, 2.3vw + 0.25rem, 2.25rem);
+    --fs-h2-cta: clamp(1.563rem, 3vw + 0.75rem, 3.125rem);
+    --fs-cta: clamp(0.625rem, 1.5vw + 0.25rem, 1.25rem);
     --fs-p: clamp(0.875rem, 1vw + 0.5rem, 1rem);
     --fs-quote: clamp(1.406rem, 2vw + 1rem, 1.875rem);
     --fs-footer: clamp(0.75rem, 2.5vw - 0.25rem, 1rem);
@@ -57,13 +59,13 @@ h2 {
     margin-bottom: clamp(0.3rem, 3vw - 1rem, 1rem);
 }
 
-p, 
+p,
 li {
     font-size: var(--fs-p);
 }
 
 p:not(.quote) {
-    line-height: 1.35rem;
+    line-height: 1.35;
 }
 
 img {
@@ -76,6 +78,8 @@ header,
     background-color: var(--clr-secondary);
 }
 
+.cta-container,
+.cta-join-btn,
 .filters-section,
 footer {
     color: var(--clr-secondary);
@@ -146,6 +150,49 @@ nav li:not(:last-child) {
 .banner-section {
     min-height: clamp(30rem, 15rem + 35vw, 43rem);
     background: url('../img/banner-landingpage.jpg') center/cover no-repeat;
+}
+
+.cta-container {
+    max-width: 35rem;
+    background-color: var(--clr-accent);
+    padding: 2.8rem 4.2rem;
+    position: relative;
+    top: 150px;
+    left: 175px;
+}
+
+.cta-container,
+.cta-join-btn {
+    border-radius: .25rem;
+}
+
+.cta-p {
+    font-family: var(--ff-damion);
+    font-size: var(--fs-h2);
+    margin-bottom: .35rem;
+}
+
+.cta-title {
+    font-family: var(--ff-rubik);
+    font-size: var(--fs-h2-cta);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.cta-text {
+    margin-bottom: 1.65rem;
+}
+
+.cta-text,
+.cta-join-btn {
+    font-size: var(--fs-cta);
+}
+
+.cta-join-btn {
+    background-color: var(--clr-primary);
+    font-weight: 500;
+    border: none;
+    padding: 1rem 8rem;
 }
 
 
@@ -230,6 +277,7 @@ footer p {
 /* --------- Responsive --------- */
 /* Media Tablet (768px) */
 @media only screen and (max-width: 1200px) {
+
     /* Banner Section */
     .banner-section {
         background-position: 90%;
